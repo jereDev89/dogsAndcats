@@ -741,7 +741,7 @@ h3 {
 	margin-bottom: 25px;
 }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 460px) {
 .input_text , .input_radio{
     width: 325px;
 }
