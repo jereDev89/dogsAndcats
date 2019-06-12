@@ -1,6 +1,6 @@
-# y
+# npm
 
-> y
+> npm
 
 ## Build Setup
 
