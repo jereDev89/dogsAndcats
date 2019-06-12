@@ -1,201 +1,199 @@
 <template>
 <div id="app">
-	<div id="container">
-		<!-- navigacija -->
-		<div class="navigation">
-			<div>
-				<img src="./assets/images/aquarium.png" alt="Aquarium with fish" class="navi_icon"/>
-			</div>
-			<div>
-			<ol>
-				<a href="index.html#pets"><li>Daily pet facts</li></a>
-				<a href="index.html#gallery"><li>Gallery</li></a>
-				<a href="index.html#contact"><li>Contacts</li></a>
-			</ol>
-			</div>
+	<!-- navigacija -->
+	<div class="navigation">
+		<div>
+			<img src="./assets/images/aquarium1.png" alt="Aquarium with fish" class="navi_icon"/>
 		</div>
-		<!-- velika slika ispod navigacije -->
-		<div class="header">
-			<img src="./assets/images/headline_image.png" alt="Nice and lazy cat">
+		<div>
+		<ol>
+			<a href="index.html#pets"><li>Daily pet facts</li></a>
+			<a href="index.html#gallery"><li>Gallery</li></a>
+			<a href="index.html#contact"><li>Contacts</li></a>
+		</ol>
 		</div>
-
-		<div class="content">
-			<div class="big_margin_tb">
-				<h1 id="pets">Daily pet facts - Love!</h1>
-			</div>
-
-			<div class="content_section">
-				<div class="section_image" 
-						data-aos="fade-right" 
-						data-aos-delay="300"
-						data-aos-duration="1000"
-						data-aos-easing="ease-in-out"
-						data-aos-once="true"
-						data-aos-anchor-placement="bottom-bottom">
-					<img src="./assets/images/meow.png" alt="Cat">
-				</div>
-				<div class="section_text section_margin_left"
-						data-aos="fade-left" 
-						data-aos-delay="300"
-						data-aos-duration="1000"
-						data-aos-easing="ease-in-out"
-						data-aos-once="true"
-						data-aos-anchor-placement="bottom-bottom">
-					<h2 class="medium_margin_b">The Cat</h2>
-					<p class="medium_margin_b">
-						Cats have been domesticated for around 4,000 years. While they were once valued for their hunting abilities, they are now valued for their companionship and loving behaviour.
-					</p>
-					<p class="medium_margin_b">
-						While not well known, the collective nouns used for cats and kittens are a clowder of cats and a kindle of kittens.
-					</p>
-					<p class="medium_margin_b">
-						Our domestic cats are known as little cats. They differ from large cats such as lions and tigers because they are naturally active at night and can purr.
-					</p>
-					<p>
-						Cats are now the most popular pet in the UK and in the US.
-					</p>
-				</div>
-			</div>
-
-			<div class="content_section section_reverse">
-				<div class="section_image" 
-						data-aos="fade-left" 
-						data-aos-delay="300"
-						data-aos-duration="1000"
-						data-aos-easing="ease-in-out"
-						data-aos-once="true"
-						data-aos-anchor-placement="bottom-bottom">
-					<img src="./assets/images/woof.png" alt="Dog">
-				</div>
-				<div class="section_text section_margin_right"
-						data-aos="fade-right" 
-						data-aos-delay="300"
-						data-aos-duration="1000"
-						data-aos-easing="ease-in-out"
-						data-aos-once="true"
-						data-aos-anchor-placement="bottom-bottom">
-					<h2 class="medium_margin_b">The Dog</h2>
-					<p class="medium_margin_b">
-						Domestic dogs have been companions to people for more than 15,000 years. There are more than 400 different breeds of dogs. PAWS or your local animal shelter has a wide variety of breeds available for adoption. The most popular types are the non-pedigree. They are extra special because they are one-of-a-kind!
-					</p>
-					<p>
-						In general, small dogs live longer than large dogs. Small dogs such as terriers may live 20 years. Giant dogs like Great Danes may live eight years. The average lifespan for a mixed breed dog is 13 to 14 years. By making sure dogs have good food, regular veterinary care, shelter and a loving family, they will live longer, healthier lives.
-					</p>
-				</div>
-			</div>
-      	</div>
-
-		<div class="gallery">
-			<div class="medium_margin_tb"> 
-				<h1 id="gallery">Gallery</h1>
-			</div>
-			<div class="big_gallery">
-				<div>
-					<img src="./assets/images/animal_3.png" alt="Hotdog">
-				</div>
-				<div class="div_show_text"
-						@mouseover="hover = true"
-						@mouseleave="hover = false">
-					<img src="./assets/images/animal_2.png" alt="Dog">
-					<div class="show_text" v-if="hover">
-						<h2>Border Collie</h2>
-						<p>The Border Collie is a working and herding dog breed developed in the Scottish borders for herding livestock, especially sheep. It was specifically bred for intelligence and obedience.</p>
-					</div>
-				</div>
-				<div>
-					<img src="./assets/images/animal_1.jpg" alt="Dog">
-				</div>
-			</div>
-			<div class="gallery_navigation">
-				<img src="./assets/images/arrow_left.png" alt="Strelica lijevo">
-				<img src="./assets/images/arrow_right.png" alt="Strelica desno">
-			</div>
-			<div class="mini_gallery">            	
-				<img src="./assets/images/gallery/img_1.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_2.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_3.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_4.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_5.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_6.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_7.png" alt="Cat" class="img_mini_gallery hvr-grow">
-				<img src="./assets/images/gallery/img_8.png" alt="Cat" class="img_mini_gallery hvr-grow">
-			</div>
+	</div>
+	<!-- velika slika ispod navigacije -->
+	<div class="header">
+		<img src="./assets/images/headline_image.png" alt="Nice and lazy cat" class="header_img">
+	</div>
+	<!-- Daily pet facts section -->
+	<div class="content">
+		<div class="big_margin_tb">
+			<h1 id="pets">Daily pet facts - Love!</h1>
 		</div>
 
-		<div class="contact">
-			<div>
-				<h1 class="big_margin_b" id="contact">Say Hello!</h1>
+		<div class="content_section">
+			<div class="section_image" 
+					data-aos="fade-right" 
+					data-aos-delay="300"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="true"
+					data-aos-anchor-placement="bottom-bottom">
+				<img src="./assets/images/meow.png" alt="Cat" class="section_big_img">
 			</div>
-			
-			<form class="contact_form" method="POST" action="" @submit="checkForm" novalidate="true">
-				<div>
-					<label for="email">EMAIL:</label><br>
-					<input id="email" type="email" name="email" v-model="email" class="input_text">
-				</div>
-				<div>
-					<label for="name">NAME AND SURNAME:</label><br>
-					<input id="name" type="text" v-model="name" name="name" class="input_text">
-				</div>
-				<div>
-					<label for="message">MESSAGE:</label><br>
-					<textarea name="message" id="" cols="30" rows="10" class="input_text textarea"></textarea>
-				</div>
-				<div class="input_radio">
-					<label for="sex" class="sex_input">SEX:</label>
-					<input type="radio" name="gender" class="input_type">Male
-					<input type="radio" name="gender" class="input_type">Female
-					<input type="radio" name="gender" class="input_type">Will not say
-				</div>
-				<div>
-					<p v-if="errors.length" class="error_message">
-    					Please correct the following error(s):
-    					<ul>
-      						<li v-for="error in errors"> {{ error }} </li>
-    					</ul>
-  					</p>
-				</div>
-				<div class="input_radio">
-					<input type="submit" value="SEND" class="btn_send">
-				</div>
-			</form>
-		</div>
-
-		<div class="footer">
-			<div class="footer_info_section">
-				<div class="footer_section">
-					<h3>PET-FACTS.COM</h3>
-					<ul>
-						<li>About us</li>
-						<li>Careers</li>
-						<li>FAQ</li>
-					</ul>
-				</div>
-				<div class="footer_section">
-					<h3>OUR BRANDS</h3>
-					<ul>
-						<li>Supercoat</li>
-						<li>Fancy Feast</li>
-						<li>Pro Plan</li>
-						<li>Beyond</li>
-					</ul>
-				</div>
-				<div class="footer_section">
-					<h3>CONTACT US</h3>
-					<ul>
-						<li>Contact us</li>
-						<li>Terms & Conditions</li>
-						<li>Privacy Policy</li>
-					</ul>
-				</div>
-			</div>
-          
-			<div class="copyright">
+			<div class="section_text section_margin_left"
+					data-aos="fade-left" 
+					data-aos-delay="300"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="true"
+					data-aos-anchor-placement="bottom-bottom">
+				<h2 class="medium_margin_b header_content">The Cat</h2>
+				<p class="medium_margin_b">
+					Cats have been domesticated for around 4,000 years. While they were once valued for their hunting abilities, they are now valued for their companionship and loving behaviour.
+				</p>
+				<p class="medium_margin_b">
+					While not well known, the collective nouns used for cats and kittens are a clowder of cats and a kindle of kittens.
+				</p>
+				<p class="medium_margin_b">
+					Our domestic cats are known as little cats. They differ from large cats such as lions and tigers because they are naturally active at night and can purr.
+				</p>
 				<p>
-					Copyright is a legal right, existing in many countries, that grants the creator of an original work exclusive rights to determine whether, and under what conditions, this original work may be used by others.
+					Cats are now the most popular pet in the UK and in the US.
 				</p>
 			</div>
-      	</div>       
-  	</div>
+		</div>
+
+		<div class="content_section section_reverse">
+			<div class="section_image" 
+					data-aos="fade-left" 
+					data-aos-delay="300"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="true"
+					data-aos-anchor-placement="bottom-bottom">
+				<img src="./assets/images/woof.png" alt="Dog" class="section_big_img">
+			</div>
+			<div class="section_text section_margin_right"
+					data-aos="fade-right" 
+					data-aos-delay="300"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-once="true"
+					data-aos-anchor-placement="bottom-bottom">
+				<h2 class="medium_margin_b header_content">The Dog</h2>
+				<p class="medium_margin_b">
+					Domestic dogs have been companions to people for more than 15,000 years. There are more than 400 different breeds of dogs. PAWS or your local animal shelter has a wide variety of breeds available for adoption. The most popular types are the non-pedigree. They are extra special because they are one-of-a-kind!
+				</p>
+				<p>
+					In general, small dogs live longer than large dogs. Small dogs such as terriers may live 20 years. Giant dogs like Great Danes may live eight years. The average lifespan for a mixed breed dog is 13 to 14 years. By making sure dogs have good food, regular veterinary care, shelter and a loving family, they will live longer, healthier lives.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- gallery section -->
+	<div class="gallery">
+		<div class="medium_margin_tb"> 
+			<h1 id="gallery">Gallery</h1>
+		</div>
+		<div class="big_gallery">
+			<div class="big_gallery_side_img">
+				<img src="./assets/images/animal_3.png" alt="Hotdog">
+			</div>
+			<div class="div_show_text"
+					@mouseover="hover = true"
+					@mouseleave="hover = false">
+				<img src="./assets/images/animal_2.png" alt="Dog" class="big_gallery_img">
+				<div class="show_text" v-if="hover">
+					<h2 class="show_text_padding_header">Border Collie</h2>
+					<p class="show_text_padding">The Border Collie is a working and herding dog breed developed in the Scottish borders for herding livestock, especially sheep. It was specifically bred for intelligence and obedience.</p>
+				</div>
+			</div>
+			<div class="big_gallery_side_img">
+				<img src="./assets/images/animal_1.jpg" alt="Dog">
+			</div>
+		</div>
+		<div class="gallery_navigation">
+			<img src="./assets/images/arrow_left.png" alt="Strelica lijevo" class="arrow">
+			<img src="./assets/images/arrow_right.png" alt="Strelica desno" class="arrow">
+		</div>
+		<div class="mini_gallery">            	
+			<img src="./assets/images/gallery/img_1.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_2.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_3.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_4.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_5.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_6.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_7.png" alt="Cat" class="img_mini_gallery hvr-grow">
+			<img src="./assets/images/gallery/img_8.png" alt="Cat" class="img_mini_gallery hvr-grow">
+		</div>
+	</div>
+	<!-- contact forma -->
+	<div class="contact">
+		<div>
+			<h1 class="big_margin_b" id="contact">Say Hello!</h1>
+		</div>
+		
+		<form class="contact_form" method="POST" action="" @submit="checkForm" novalidate="true">
+			<div>
+				<label for="email">EMAIL:</label><br>
+				<input id="email" type="email" name="email" v-model="email" class="input_text">
+			</div>
+			<div>
+				<label for="name">NAME AND SURNAME:</label><br>
+				<input id="name" type="text" v-model="name" name="name" class="input_text">
+			</div>
+			<div>
+				<label for="message">MESSAGE:</label><br>
+				<textarea name="message" id="" cols="30" rows="10" class="input_text textarea"></textarea>
+			</div>
+			<div class="input_radio">
+				<label for="sex" class="sex_input">SEX:</label>
+				<input type="radio" name="gender" class="input_type">Male
+				<input type="radio" name="gender" class="input_type">Female
+				<input type="radio" name="gender" class="input_type">Will not say
+			</div>
+			<div>
+				<p v-if="errors.length" class="error_message">
+					Please correct the following error(s):
+					<ul>
+						<li v-for="error in errors"> {{ error }} </li>
+					</ul>
+				</p>
+			</div>
+			<div class="input_radio">
+				<input type="submit" value="SEND" class="btn_send">
+			</div>
+		</form>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer_info_section">
+			<div class="footer_section">
+				<h3>PET-FACTS.COM</h3>
+				<ul>
+					<li>About us</li>
+					<li>Careers</li>
+					<li>FAQ</li>
+				</ul>
+			</div>
+			<div class="footer_section">
+				<h3>OUR BRANDS</h3>
+				<ul>
+					<li>Supercoat</li>
+					<li>Fancy Feast</li>
+					<li>Pro Plan</li>
+					<li>Beyond</li>
+				</ul>
+			</div>
+			<div class="footer_section">
+				<h3>CONTACT US</h3>
+				<ul>
+					<li>Contact us</li>
+					<li>Terms & Conditions</li>
+					<li>Privacy Policy</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<p>
+				Copyright is a legal right, existing in many countries, that grants the creator of an original work exclusive rights to determine whether, and under what conditions, this original work may be used by others.
+			</p>
+		</div>
+	</div>       
 </div>
 </template>
 
@@ -213,6 +211,7 @@ export default {
 		}
 	},
 	methods: {
+		// Funkcija koja provjerava ako su podaci uneseni u formu (ime i email)
 		checkForm(e) {
 		this.errors = [];
 
@@ -229,9 +228,11 @@ export default {
 			return true;
 		}
 
+		// Funkcija koja zaustavlja slanje podataka iz forme ako nisu ispunjeni uvjeti
 		e.preventDefault();
 		},
 
+		// Funkcija koja provjerava valjanost email adrese
 		validEmail(email) {
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		return re.test(email);
@@ -266,25 +267,22 @@ time, mark, audio, video {
  font: inherit;
  vertical-align: baseline;
 }
-#container {
-    display: flex;
-    flex-direction: column;
+#app {
+	display: flex;
+	flex-direction: column;
+	width: 1440px;
+    margin: auto;
 }
 body{
     font-family: Open Sans;
     font-size: 20px;
     font-weight: normal;
-    overflow-x: hidden;
     color: #2B2B2B;
     line-height: 30px;
     letter-spacing: 0.0888889px;
 }
 html {
     scroll-behavior: smooth;
-}
-#container {
-    width: 1440px;
-    margin: auto;
 }
 h1 {
     font-size: 46px;
@@ -510,4 +508,218 @@ label {
 .copyright {
     padding: 40px 200px 0px 200px;
 }
+/************
+RESPONSIVE DESIGN
+***************/
+@media only screen and (max-width: 1440px) {
+#app {
+	width: 100%;
+	height: auto;
+}
+.header {
+	height: auto;
+}
+.header_img {
+	object-fit: cover;
+	width: 100%;
+}
+.big_gallery_side_img {
+	display: none;
+}
+.big_gallery {
+    justify-content: center;
+	flex-wrap: nowrap;
+}
+.content_section {
+    margin: 0px 100px;
+}
+.mini_gallery {
+	margin: 0px 100px 100px 100px;
+	justify-content: space-around;
+}
+.copyright {
+    padding: 40px 100px 0px 100px;
+}
+}
+@media only screen and (max-width: 1200px) {
+.mini_gallery {
+    margin: 0px 15px 80px 15px;
+}
+.content_section {
+    margin: 0px 15px;
+}
+.navigation {
+	padding: 10px 40px;
+}
+.navi_icon {
+	padding-right: 40px;
+}
+.copyright {
+    padding: 40px 15px 0px 15px;
+}
+}
+@media only screen and (max-width: 1000px) {
+.content{
+    flex-direction: column;
+}
+.content_section {
+	flex-direction: column;
+    justify-content: space-between;
+}
+.section_reverse {
+    flex-direction: column;
+}
+.section_margin_left {
+	margin: 30px 0px 0px 0px;
+}
+.section_margin_right {
+    margin: 30px 0px 0px 0px;
+}
+.section_image {
+	display: flex;
+	align-self: center;
+}
+.big_margin_tb {
+    margin: 70px 15px; /* 50 30*/
+}
+.medium_margin_tb {
+    margin: 40px 0px;
+}
+.header_content {
+	text-align: center;
+}
+.big_gallery {
+    margin-bottom: 45px;
+}
+.gallery_navigation {
+    margin: 0px 165px 75px 165px;
+}
+.mini_gallery {
+    margin: 0px 15px 30px 15px;
+}
+.header{
+	object-fit: cover;
+}
+}
+@media only screen and (max-width: 780px) {
+.big_gallery {
+	margin: 0px 15px 45px 15px;
+}
+.big_gallery_img {
+	width: 100%;
+	display: flex;
+}
+.div_show_text {
+	padding: 0px;
+	width: 100%;
+}
+.show_text_padding {
+	padding: 10px;
+}
+.show_text_padding_header {
+	padding: 0px 10px;
+}
+.div_show_text .show_text {
+	width: 100%;
+	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	padding: 0px;
+}
+.gallery_navigation {
+    margin: 0px 80px 75px 80px;
+}
+.arrow {
+	width: 36px;
+	height: 26px;
+}
+.header_img {
+	height: 250px;
+}
+}
+@media only screen and (max-width: 700px) {
+.navigation {
+	padding: 10px 30px;
+}
+.navi_icon {
+	padding-right: 30px;
+}
+ol li {
+    padding-right: 20px;
+}
+.footer {
+    padding: 80px 0px;
+}
+.copyright {
+    padding: 40px 15px 0px 15px;
+}
+.input_text , .input_radio{
+    width: 400px;
+}
+.textarea {
+    height: 200px;
+}
+.sex_input {
+    margin-right: 50px;
+}
+}
+@media only screen and (max-width: 620px) {
+.img_mini_gallery {
+	width: 157px;
+	height: 157px;
+}
+.header_img {
+	height: 200px;
+}
+.big_margin_tb {
+    margin: 50px 30px; /* 50 30*/
+}
+}
+@media only screen and (max-width: 500px) {
+.section_image {
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+.section_big_img {
+	width: 345px;
+	height: 345px;
+}
+.footer {
+    padding: 80px 0px;
+}
+.copyright {
+    padding: 40px 15px 0px 15px;
+}
+/* END CONTACT*/
+.footer {
+    padding: 40px 0px;
+}
+.footer_info_section {
+	display: flex;
+	flex-direction: column;
+}
+h3 {
+    padding-bottom: 20px;
+}
+.footer_section {
+	margin-bottom: 25px;
+}
+}
+@media only screen and (max-width: 500px) {
+.input_text , .input_radio{
+    width: 325px;
+}
+.textarea {
+    height: 200px;
+}
+.sex_input {
+    margin-right: 0px;
+}
+label {
+	padding-left: 0px;
+}
+}
+
 </style>
