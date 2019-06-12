@@ -6,12 +6,18 @@
 			<img src="./assets/images/aquarium1.png" alt="Aquarium with fish" class="navi_icon"/>
 		</div>
 		<div>
-		<ol>
-			<a href="index.html#pets"><li>Daily pet facts</li></a>
-			<a href="index.html#gallery"><li>Gallery</li></a>
-			<a href="index.html#contact"><li>Contacts</li></a>
-		</ol>
+			<ol class="navi_big">
+				<a href="index.html#pets"><li>Daily pet facts</li></a>
+				<a href="index.html#gallery"><li>Gallery</li></a>
+				<a href="index.html#contact"><li>Contacts</li></a>
+			</ol>
+			<Slide right class="navi_small">
+				<a href="index.html#pets">Daily pet facts</a>
+				<a href="index.html#gallery">Gallery</a>
+				<a href="index.html#contact">Contacts</a>
+    		</Slide>
 		</div>
+		
 	</div>
 	<!-- velika slika ispod navigacije -->
 	<div class="header">
@@ -200,6 +206,7 @@
 <script>
 import AOS from 'aos'; // Animacije  -- https://github.com/michalsnik/aos
 import 'aos/dist/aos.css'; // Animacije
+import { Slide } from 'vue-burger-menu'  // import the CSS transitions you wish to use, in this case we are using `Slide`
 
 export default {
 	data() {
@@ -237,7 +244,10 @@ export default {
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		return re.test(email);
 		}
-	}
+	},
+	components: {
+        Slide // Register your component
+    }
 }
 
 AOS.init(); // Animacije
@@ -355,6 +365,15 @@ button:focus {
 	flex-direction: row;
 	background-color: #F7F7F7;
 	align-items: center;
+}
+.navi_small {
+	display: none;
+}
+.bm-menu {
+	background-color: #F7F7F7;
+}
+.cross-style {
+	cursor: pointer;
 }
 /* ikona u navigaciji */
 .navi_icon {
@@ -674,6 +693,18 @@ ol li {
 }
 .big_margin_tb {
     margin: 50px 30px; /* 50 30*/
+}
+.navi_big {
+	display: none;
+}
+.navi_small {
+	display: inline;
+}
+.navigation {
+	padding: 10px 30px;
+}
+.bm-burger-button {
+    top: 20px;
 }
 }
 @media only screen and (max-width: 500px) {
