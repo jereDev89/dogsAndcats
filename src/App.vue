@@ -6,18 +6,19 @@
 			<img src="./assets/images/aquarium1.png" alt="Aquarium with fish" class="navi_icon"/>
 		</div>
 		<div>
+			<!-- navigacija za velike ekrane -->
 			<ol class="navi_big">
 				<a href="index.html#pets"><li>Daily pet facts</li></a>
 				<a href="index.html#gallery"><li>Gallery</li></a>
 				<a href="index.html#contact"><li>Contacts</li></a>
 			</ol>
+			<!-- hamburher button -->
 			<Slide right class="navi_small">
 				<a href="index.html#pets">Daily pet facts</a>
 				<a href="index.html#gallery">Gallery</a>
 				<a href="index.html#contact">Contacts</a>
     		</Slide>
 		</div>
-		
 	</div>
 	<!-- velika slika ispod navigacije -->
 	<div class="header">
@@ -206,7 +207,7 @@
 <script>
 import AOS from 'aos'; // Animacije  -- https://github.com/michalsnik/aos
 import 'aos/dist/aos.css'; // Animacije
-import { Slide } from 'vue-burger-menu'  // import the CSS transitions you wish to use, in this case we are using `Slide`
+import { Slide } from 'vue-burger-menu'  // Hamburger button
 
 export default {
 	data() {
@@ -246,7 +247,7 @@ export default {
 		}
 	},
 	components: {
-        Slide // Register your component
+        Slide // Ovdje sam registrirao komponentu Slide za hamburger button
     }
 }
 
@@ -366,9 +367,11 @@ button:focus {
 	background-color: #F7F7F7;
 	align-items: center;
 }
+/* Hamburger button */
 .navi_small {
 	display: none;
 }
+/* klasa za pozadiunu u meniu koji otvara ham button */
 .bm-menu {
 	background-color: #F7F7F7;
 }
@@ -752,5 +755,4 @@ label {
 	padding-left: 0px;
 }
 }
-
 </style>
